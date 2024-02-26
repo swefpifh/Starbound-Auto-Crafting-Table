@@ -1,0 +1,10 @@
+{
+  "author" : "swefpifh / natsumi",
+  "description" : "♦ Compatibility with v1.4.4\n♦ Raw files : https://github.com/swefpifh/Starbound-Auto-Crafting-Table\n\n[code]\n[u]Mod Pack Permissions[/u] :\n[i]Anyone can use this mod in their mod compilation without the author's consent[/i].\n\n[u]Mod Assets Permissions[/u] :\n[i]Anyone can alter/redistribute the mod's assets without the author's consent, but the [url=#]contributor(s)[/url] must be named for his work.[/i].\n[/code]\n\nIf you want test this [b]Auto Crafting Table[/b], you can use this command ingame in admin mode :\n[list]\n[*][i]/spawnitem MFCautocraftingtable[/i]\n[/list]\n\nMORE INFORMATIONS COMING SOON",
+  "friendlyName" : "Auto Crafting Table (for modders)",
+  "link" : "steam://url/CommunityFilePage/3168475406",
+  "name" : "Auto Crafting Table",
+  "steamContentId" : "3168475406",
+  "tags" : "Crafting and Building",
+  "version" : "v1.0"
+}

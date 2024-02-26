@@ -1,0 +1,10 @@
+[
+
+//{ "op": "add", "path": "/statusControllerSettings/primaryScriptSources/-", "value": "/scripts/playerteleport.lua" },
+//{ "op": "add", "path": "/statusControllerSettings/primaryScriptSources/-", "value": "/stats/sg_player_primary.lua" },
+
+//{ "op":"add", "path":"/defaultBlueprints/tier1/-", "value":{"item":"sgArchitectsTable"} },
+//{ "op":"add", "path":"/defaultBlueprints/tier1/-", "value":{"item":"sgCraftingTable"} },
+//{ "op":"add", "path":"/defaultBlueprints/tier1/-", "value":{"item":"sgArmoryCraftingTable"} }
+
+]

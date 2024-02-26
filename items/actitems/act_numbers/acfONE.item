@@ -1,0 +1,13 @@
+{
+  "itemName" : "acfONE",
+  
+  "price" : 50,
+  "itemTags" : [ "reagent" ],
+  "rarity" : "Common",
+  "inventoryIcon" : "acfONE.png",
+  "maxStack" : 100,
+  
+  "shortdescription" : "Number 1",
+  "category" : "^#ec9630;Modding for Community^resert;",
+  "description" : "Description test..."
+}

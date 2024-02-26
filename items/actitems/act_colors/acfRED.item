@@ -1,0 +1,13 @@
+{
+  "itemName" : "acfRED",
+  
+  "price" : 50,
+  "itemTags" : [ "reagent" ],
+  "rarity" : "Common",
+  "inventoryIcon" : "acfRED.png",
+  "maxStack" : 100,
+  
+  "shortdescription" : "Red color",
+  "category" : "^#ec9630;Modding for Community^resert;",
+  "description" : "Description test..."
+}

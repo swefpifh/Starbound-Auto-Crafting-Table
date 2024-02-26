@@ -1,0 +1,60 @@
+{
+  "objectName" : "MFCautocraftingtable",
+  
+  "shortdescription" : "Auto Crafting Table",
+  "category" : "^#ec9630; Modding for Community^resert;",
+  "description" : "Used to craft many things.",
+  
+  "printable" : false,
+  "rarity" : "Common",
+  "price" : 500,
+  "objectType" : "container",
+  "race" : "generic",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "autocraftingtable_3i.png:<color>.<frame>", "fullbright" : true }, { "image" : "autocraftingtable_3i_lit.png:<color>.<frame>" } ],
+	  "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    },
+	{
+      "imageLayers" : [ { "image" : "autocraftingtable_3i.png:<color>.<frame>", "fullbright" : true }, { "image" : "autocraftingtable_3i_lit.png:<color>.<frame>" } ],
+	  "direction" : "right",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+  
+  "soundEffect" : "/sfx/objects/campfire.ogg",
+  "soundEffectRadius" : 50,
+
+  "statusEffects" : [ ],
+
+  "recipeGroup" : "MFCautocraftingtableRG",
+   "scripts" : [ "/objects/autocraftingtable_3i/autocraftingtable_3i.lua" ],
+   "recipePath" : "/objects/autocraftingtable_3i/recipes_3i.json", // path to your recipe JSON
+  "scriptDelta" : 5,
+  
+  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
+  
+  "slotCount" : 12,
+  "uiConfig" : "/interface/windowconfig/autocraftingtable_3i.config",
+  
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "acfPURPLE",
+  
+  "price" : 80,
+  "itemTags" : [ "reagent" ],
+  "rarity" : "Uncommon",
+  "inventoryIcon" : "acfPURPLE.png",
+  "maxStack" : 100,
+  
+  "shortdescription" : "Purple color",
+  "category" : "^#ec9630;Modding for Community^resert;",
+  "description" : "Description test..."
+}

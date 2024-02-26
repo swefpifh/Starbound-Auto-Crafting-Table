@@ -1,0 +1,13 @@
+{
+  "itemName" : "acfGREEN",
+  
+  "price" : 50,
+  "itemTags" : [ "reagent" ],
+  "rarity" : "Common",
+  "inventoryIcon" : "acfGREEN.png",
+  "maxStack" : 100,
+  
+  "shortdescription" : "Green color",
+  "category" : "^#ec9630;Modding for Community^resert;",
+  "description" : "Description test..."
+}

@@ -1,0 +1,59 @@
+{
+	"recipes": [
+		{
+			"input1": {"acfZERO": [1, 1]},
+			"input2": {"acfONE": [1, 1]}, 
+			"input3": {"acfTWO": [1, 1]}, 
+			"outputs": [
+				{"item": ["acfTHREE",1], "chance": 100}
+			],
+			"time" : 1
+		},
+		
+		{
+			"input1": {"acfBLUE": [1, 1]},
+			"input2": {"acfGREEN": [1, 1]},
+			"input3": {},
+			"outputs": [
+				{"item": ["acfCYAN",1], "chance": 100},
+				{"item": ["acfBLACK",1], "chance": 5}
+			],
+			"time" : 1
+		},
+		
+		{
+			"input1": {"acfRED": [1, 1]},
+			"input2": {"acfBLUE": [1, 1]},
+			"input3": {},
+			"outputs": [
+				{"item": ["acfPURPLE",1], "chance": 100},
+				{"item": ["acfBLACK",1], "chance": 5}
+			],
+			"time" : 1
+		},
+		
+		{
+			"input1": {"acfRED": [1, 1]},
+			"input2": {"acfGREEN": [1, 1]},
+			"input3": {},
+			"outputs": [
+				{"item": ["acfYELLOW",1], "chance": 100},
+				{"item": ["acfBLACK",1], "chance": 5}
+			],
+			"time" : 1
+		},
+		
+		{
+			"input1": {"acfWHITE": [4, 1]},
+			"input2": {},
+			"input3": {},
+			"outputs": [
+				{"item": ["acfRED",1], "chance": 100},
+				{"item": ["acfGREEN",1], "chance": 100},
+				{"item": ["acfBLUE",1], "chance": 100},
+				{"item": ["acfBLACK",1], "chance": 10}
+			],
+			"time" : 1
+		}
+	]
+}

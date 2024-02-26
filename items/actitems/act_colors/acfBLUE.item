@@ -1,0 +1,13 @@
+{
+  "itemName" : "acfBLUE",
+  
+  "price" : 50,
+  "itemTags" : [ "reagent" ],
+  "rarity" : "Common",
+  "inventoryIcon" : "acfBLUE.png",
+  "maxStack" : 100,
+  
+  "shortdescription" : "Blue color",
+  "category" : "^#ec9630;Modding for Community^resert;",
+  "description" : "Description test..."
+}

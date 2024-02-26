@@ -1,0 +1,13 @@
+{
+  "itemName" : "acfTWO",
+  
+  "price" : 50,
+  "itemTags" : [ "reagent" ],
+  "rarity" : "Common",
+  "inventoryIcon" : "acfTWO.png",
+  "maxStack" : 100,
+  
+  "shortdescription" : "Number 2",
+  "category" : "^#ec9630;Modding for Community^resert;",
+  "description" : "Description test..."
+}
