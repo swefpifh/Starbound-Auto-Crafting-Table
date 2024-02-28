@@ -46,9 +46,12 @@
   "statusEffects" : [ ],
 
   "recipeGroup" : "MFCautocraftingtableRG",
-   "scripts" : [ "/objects/autocraftingtable_3i/autocraftingtable_3i.lua" ],
-   "recipePath" : "/objects/autocraftingtable_3i/recipes_3i.json", // path to your recipe JSON
+  
+  "scripts" : [ "/scripts/autocraftingtable/autocraftingtable_3i.lua" ],
   "scriptDelta" : 5,
+  
+  "progressbartitle" : "^#ec9630;Crafting progress:^reset;", //Customise the title of the progress bar
+  "recipePath" : "/objects/autocraftingtable_3i/recipes_3i.json", // Path to your recipe JSON
   
   "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
   
