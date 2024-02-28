@@ -10,11 +10,14 @@ function init()
 end
 
 function update(dt)
-	if self.pickedRecipe ~= nil and self.timer > 0 then
-		self.timer = self.timer - dt
+	local PBarDisplay = config.getParameter("progressbardisplay")
+	if self.pickedRecipe ~= nil and self.timer > 0 and PBarDisplay == 1 then
+		self.timer = self.timer - dt		
 		local progressPercent = math.floor((1 - self.timer / self.pickedRecipe.time) * 100)
 		local progressBarTXT = config.getParameter("progressbartitle")
 		object.say(progressBarTXT .. " " .. progressPercent .. "%")
+	else
+		self.timer = self.timer - dt
 	end
 
 	local contents = world.containerItems(entity.id())
