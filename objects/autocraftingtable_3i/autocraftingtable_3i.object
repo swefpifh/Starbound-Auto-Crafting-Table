@@ -14,25 +14,19 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "autocraftingtable_3i.png:<color>.<frame>", "fullbright" : true }, { "image" : "autocraftingtable_3i_lit.png:<color>.<frame>" } ],
+	  "image" : "autocraftingtable_3i.png:<color>.<frame>",
 	  "direction" : "left",
       "flipImages" : true,
-
       "imagePosition" : [-16, 0],
-      "frames" : 4,
-      "animationCycle" : 1.0,
-
+	  
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
       "collision" : "platform"
     },
 	{
-      "imageLayers" : [ { "image" : "autocraftingtable_3i.png:<color>.<frame>", "fullbright" : true }, { "image" : "autocraftingtable_3i_lit.png:<color>.<frame>" } ],
+	  "image" : "autocraftingtable_3i.png:<color>.<frame>",
 	  "direction" : "right",
-
       "imagePosition" : [-16, 0],
-      "frames" : 4,
-      "animationCycle" : 1.0,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
@@ -40,20 +34,29 @@
     }
   ],
   
-  "soundEffect" : "/sfx/objects/campfire.ogg",
+  "animationPosition" : [-16, 0],
+  "animation" : "autocraftingtable_3i.animation",
+  "animationParts" : { 
+						"actTableSprite" : "autocraftingtable_3i.png",
+						"actTableSpritelit" : "autocraftingtable_3i_lit.png"
+						},
+  
+  
+  "soundEffect" : "/sfx/objects/campfire.ogg", // Permanent sound effect from the table
   "soundEffectRadius" : 50,
 
   "statusEffects" : [ ],
 
-  "recipeGroup" : "MFCautocraftingtableRG",
+  "recipeGroup" : "noNeed",
   
   "scripts" : [ "/scripts/autocraftingtable/autocraftingtable_3i.lua" ],
   "scriptDelta" : 5,
   
-  "progressbartitle" : "^#ec9630;Crafting progress:^reset;", //Customise the title of the progress bar
-  "recipePath" : "/objects/autocraftingtable_3i/recipes_3i.json", // Path to your recipe JSON
+  "progressbardisplay" : 1,   // 1 = Bubble displayed, 0 = Bubble Hidded
+  "progressbartitle" : "^#ec9630;Crafting progress:^reset;",   // Customise the title of the progress bar
+  "recipePath" : "/objects/autocraftingtable_3i/recipes_3i.json",   // Path to your recipe JSON
   
-  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
+  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ], // When your open table inventory
   
   "slotCount" : 12,
   "uiConfig" : "/interface/windowconfig/autocraftingtable_3i.config",

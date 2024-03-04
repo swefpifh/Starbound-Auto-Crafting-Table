@@ -7,6 +7,8 @@ function init()
 	self.timer = 0
 	self.consumedItems = false
 	self.pickedRecipe = nil
+	
+	animator.setAnimationState("actTableSprite", "idle") -- Set initial animation state to idle
 end
 
 function update(dt)
@@ -16,8 +18,14 @@ function update(dt)
 		local progressPercent = math.floor((1 - self.timer / self.pickedRecipe.time) * 100)
 		local progressBarTXT = config.getParameter("progressbartitle")
 		object.say(progressBarTXT .. " " .. progressPercent .. "%")
+		
+		animator.setAnimationState("actTableSprite", "working") -- Set animation state to working if recipe is in progress
+	elseif self.pickedRecipe ~= nil and self.timer > 0 and PBarDisplay == 0 then
+		self.timer = self.timer - dt		
+		animator.setAnimationState("actTableSprite", "working") -- Set animation state to working if recipe is in progress
 	else
 		self.timer = self.timer - dt
+		animator.setAnimationState("actTableSprite", "idle") -- Set animation state to idle if no recipe is in progress
 	end
 
 	local contents = world.containerItems(entity.id())

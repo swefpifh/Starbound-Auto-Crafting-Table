@@ -1,0 +1,76 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "actTableSprite" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "working" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop",
+			"properties" : {
+              "persistentSound" : "/sfx/objects/mechcrafting_loop.ogg",
+			  "persistentSoundRangeMultiplier" : 0.6
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "actTableSprite" : {
+        "properties" : {
+          "centered" : false,
+		  "zLevel" : 1
+        },
+
+        "partStates" : {
+          "actTableSprite" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.default"
+              }
+            },
+
+            "working" : {
+              "properties" : {
+                "image" : "<partImage>:default.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  
+	  "actTableSpritelit" : {
+        "properties" : {
+          "centered" : false,
+		  "zLevel" : 2
+        },
+
+        "partStates" : {
+          "actTableSprite" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:default.default"
+              }
+            },
+
+            "working" : {
+              "properties" : {
+                "fullbright" : true,
+				"image" : "<partImage>:default.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "sounds" : {
+    "idle" : [],
+    "working" : []
+  }
+}
