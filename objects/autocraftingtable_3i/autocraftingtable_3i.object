@@ -52,8 +52,10 @@
   "scripts" : [ "/scripts/autocraftingtable/autocraftingtable_3i.lua" ],
   "scriptDelta" : 5,
   
-  "progressbardisplay" : 1,   // 1 = Bubble displayed, 0 = Bubble Hidded
-  "progressbartitle" : "^#ec9630;Crafting progress:^reset;",   // Customise the title of the progress bar
+  "progressbardisplay" : 1,   // 1 = Bubble displayed, 0 = Bubble hidded
+  "progressbartitle" : "Crafting progress:",   // Customise the title of the progress bar
+  "progressbartitlecolor" : "white",   // Colour of the text in the bubble
+  "progressbarpercentcolor" : "#ec9630",   // Colour of the percent in the bubble
   "recipePath" : "/objects/autocraftingtable_3i/recipes_3i.json",   // Path to your recipe JSON
   
   "openSounds" : [ "/sfx/objects/campfire_use.ogg" ], // When your open table inventory

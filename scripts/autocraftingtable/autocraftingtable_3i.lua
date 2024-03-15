@@ -17,7 +17,9 @@ function update(dt)
 		self.timer = self.timer - dt		
 		local progressPercent = math.floor((1 - self.timer / self.pickedRecipe.time) * 100)
 		local progressBarTXT = config.getParameter("progressbartitle")
-		object.say(progressBarTXT .. " " .. progressPercent .. "%")
+		local progressBarTXTtitleC = config.getParameter("progressbartitlecolor")
+		local progressBarTXTpercentC = config.getParameter("progressbarpercentcolor")
+		object.say("^" .. progressBarTXTtitleC .. ";" .. progressBarTXT .. " ^reset;" .. "^" .. progressBarTXTpercentC .. ";" .. progressPercent .. "%^reset;")
 		
 		animator.setAnimationState("actTableSprite", "working") -- Set animation state to working if recipe is in progress
 	elseif self.pickedRecipe ~= nil and self.timer > 0 and PBarDisplay == 0 then
