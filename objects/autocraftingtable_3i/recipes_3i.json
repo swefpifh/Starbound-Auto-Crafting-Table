@@ -64,6 +64,19 @@
 				{"item": ["acfWHITE",2], "chance": 100}
 			],
 			"time" : 25
+		},
+		
+		{
+			"input1": {"acfTWO": [1, 1]},
+			"input2": {"acfRED": [1, 1]},
+			"input3": {"acfZERO": [1, 0]},
+			"outputs": [
+				{"item": ["acfGREEN",1], "chance": 25},
+				{"item": ["acfBLUE",1], "chance": 40},
+				{"item": ["acfONE",1], "chance": 5},
+				{"item": ["acfTHREE",1], "chance": 100}
+			],
+			"time" : 15
 		}
 	]
 }

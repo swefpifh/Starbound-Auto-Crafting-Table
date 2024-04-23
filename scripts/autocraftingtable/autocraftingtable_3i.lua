@@ -12,6 +12,10 @@ function init()
 end
 
 function update(dt)
+	local areaDetectionEnabled = config.getParameter("areadetection")
+    local areaDetectionRange = config.getParameter("areadetectionrange")
+    local areaDetectionItem = config.getParameter("areadetectionitem")
+
 	local PBarDisplay = config.getParameter("progressbardisplay")
 	if self.pickedRecipe ~= nil and self.timer > 0 and PBarDisplay == 1 then
 		self.timer = self.timer - dt		
@@ -45,14 +49,28 @@ function update(dt)
 	end
 
 	if countElements(contents) > 0 and self.pickedRecipe == nil then
-		recipesCheck()
+		recipesCheck(areaDetectionEnabled, areaDetectionRange, areaDetectionItem)
 	end
 	if self.pickedRecipe ~= nil then
 		recipesSpawn()
 	end
 end
 
-function recipesCheck()
+function recipesCheck(areaDetectionEnabled, areaDetectionRange, areaDetectionItem)
+	if areaDetectionEnabled == 1 then
+		local detected = false
+		for _, item in ipairs(areaDetectionItem) do
+			local objectsNearby = world.objectQuery(entity.position(), areaDetectionRange, {name = item})
+			if #objectsNearby > 0 then
+				detected = true
+				break
+			end
+		end
+		if not detected then
+			return
+		end
+	end
+
 	for _, v in ipairs(self.recipes) do
 		local inputSlots = deepCopy(self.inputSlots)
 		local requiredInput = {}
