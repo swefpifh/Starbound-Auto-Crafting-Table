@@ -15,6 +15,9 @@ function update(dt)
 	local areaDetectionEnabled = config.getParameter("areadetection")
     local areaDetectionRange = config.getParameter("areadetectionrange")
     local areaDetectionItem = config.getParameter("areadetectionitem")
+	
+	local particlesEffectDisplay = config.getParameter("particleseffect")
+	local particlesEffectName = config.getParameter("particlesname")
 
 	local PBarDisplay = config.getParameter("progressbardisplay")
 	if self.pickedRecipe ~= nil and self.timer > 0 and PBarDisplay == 1 then
@@ -57,6 +60,15 @@ function update(dt)
 end
 
 function recipesCheck(areaDetectionEnabled, areaDetectionRange, areaDetectionItem)
+	local dailycycle = config.getParameter("dailycycle")
+	local cyclePhase = world.timeOfDay() < 0.5 and 1 or 2 -- 1 for day, 2 for night
+	
+	if dailycycle == 1 and cyclePhase ~= 1 then
+		return -- Return if the crafting table is set to work only during the day and it's currently night
+	elseif dailycycle == 2 and cyclePhase ~= 2 then
+		return -- Return if the crafting table is set to work only during the night and it's currently day
+	end
+
 	if areaDetectionEnabled == 1 then
 		local detected = false
 		for _, item in ipairs(areaDetectionItem) do

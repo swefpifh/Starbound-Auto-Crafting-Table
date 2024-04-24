@@ -52,17 +52,19 @@
   "scripts" : [ "/scripts/autocraftingtable/autocraftingtable_3i.lua" ],
   "scriptDelta" : 5,
 
-  "areadetection" : 0, // (0 = Deactivated by default, 1 = Enabled)
-  "areadetectionrange" : 10, // (Radius of X blocks, 10 = default)
-  "areadetectionitem" : ["flowerblue", "basictoilet"],	
-
-  "progressbardisplay" : 1,   // 1 = Bubble displayed, 0 = Bubble hidded
-  "progressbartitle" : "Crafting progress:",   // Customise the title of the progress bar
-  "progressbartitlecolor" : "white",   // Colour of the text in the bubble
-  "progressbarpercentcolor" : "#ec9630",   // Colour of the percent in the bubble
-  "recipePath" : "/objects/autocraftingtable_3i/recipes_3i.json",   // Path to your recipe JSON
+  "areadetection" : 0, //(0 = Deactivated by default, 1 = Enabled)
+  "areadetectionrange" : 10, //(Radius of X blocks, 10 = default)
+  "areadetectionitem" : ["flowerblue", "basictoilet"],
   
-  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ], // When your open table inventory
+  "dailycycle" : 0, //(0 = Deactivated by default, 1 = Day only, 2 = Night only)
+  
+  "progressbardisplay" : 1, //1 = Bubble displayed, 0 = Bubble hidded
+  "progressbartitle" : "Crafting progress:", //Customise the title of the progress bar
+  "progressbartitlecolor" : "white", //Colour of the text in the bubble
+  "progressbarpercentcolor" : "#ec9630", //Colour of the percent in the bubble
+  "recipePath" : "/objects/autocraftingtable_3i/recipes_3i.json", //Path to your recipe JSON
+  
+  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ], //When your open table inventory
   
   "slotCount" : 12,
   "uiConfig" : "/interface/windowconfig/autocraftingtable_3i.config",
